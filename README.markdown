@@ -76,11 +76,11 @@ Let the compiler infer self in all cases where it is able to. Areas where self s
 
 ```swift
 struct Example {
-	let name:String
+    let name:String
 
-	init(name:String) {
-		self.name = name
-	}
+    init(name:String) {
+        self.name = name
+    }
 }
 ```
 
@@ -97,8 +97,8 @@ let people = [
 ]
 
 let strings = people.map() {
-	(name:String, age:Int) -> String in
-	return "\(name) is \(age) years old"
+    (name:String, age:Int) -> String in
+    return "\(name) is \(age) years old"
 }
 ```
 
@@ -107,8 +107,8 @@ If at all possible remove the types if the compiler can infer them:
 ```swift
 
 let strings = people.map() {
-	(name, age) in
-	return "\(name) is \(age) years old"
+    (name, age) in
+    return "\(name) is \(age) years old"
 }
 ```
 
@@ -186,8 +186,8 @@ When creating code to convert instances from one type to another use either "to"
 
 ```swift
 struct Mood {
-	func toColor() -> NSColor {
-		return NSColor.blueColor()
+    func toColor() -> NSColor {
+        return NSColor.blueColor()
   }
 }
 ```
@@ -196,9 +196,9 @@ Or `init()` methods:
 
 ```swift
 extension NSColor {
-	convenience init(_ mood:Mood) {
-		super.init(color:NSColor.blueColor)
-	}
+    convenience init(_ mood:Mood) {
+        super.init(color:NSColor.blueColor)
+    }
 }
 ```
 
@@ -206,8 +206,8 @@ While you might be tempted to use a getter, e.g.g:
 
 ```swift
 struct Mood {
-	var color: NSColor {
-		return NSColor.blueColor()
+    var color: NSColor {
+        return NSColor.blueColor()
     }
 }
 ```
