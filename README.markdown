@@ -147,7 +147,7 @@ Use the short version of computed properties if you only need to implement a get
 
 ```swift
 class Example {
-    var age {
+    var age: UInt32 {
         return arc4random()
     }
 }
@@ -157,7 +157,7 @@ to this:
 
 ```swift
 class Example {
-    var age {
+    var age: UInt32 {
         get {
             return arc4random()
         }
@@ -169,7 +169,7 @@ If you add a set or a didSet to the property then you will need to explicitly pr
 
 ```swift
 class Person {
-    var age {
+    var age: UInt32 {
         get {
             return arc4random()
         }
