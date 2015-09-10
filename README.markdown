@@ -2,6 +2,10 @@
 
 Best practices for software development with Swift.
 
+## Preface
+
+This is very much a work in progress. Contributions are very much appreciated.
+
 ## Note to contributors
 
 Please make sure all examples are runnable. This markdown will be converted to a Mac OS X playground.
