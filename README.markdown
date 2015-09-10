@@ -173,9 +173,9 @@ class Person {
         get {
             return arc4random()
         }
-		didSet {
-			print("Time flies like a banana")
-		}
+        set {
+            print("Time flies like a banana so I'm throwing away your age")
+        }
     }
 }
 ```
